@@ -9,13 +9,7 @@ function App() {
 
   const [categories] = useState([
     {
-      name: 'about me'
-    },
-    {
       name: 'projects'
-    },
-    {
-      name: 'GitHub'
     },
     {
       name: 'resume'

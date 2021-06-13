@@ -24,7 +24,7 @@ function Nav(props) {
                     <span onClick={() => setContactSelected(true)}>Contact</span>
                 </a>
                 {categories.map((category) => (
-                    <a className={`nav-link ${currentCategory.name === category.name && !contactSelected && 'navActive'}`} key={category.name} href={`category.name`}>
+                    <a className={`nav-link ${currentCategory.name === category.name && !contactSelected && 'navActive'}`} key={category.name} href={category.name}>
                         <span onClick={() => {setCurrentCategory(category);
                         setContactSelected(false)}}>
                             {capitalizeFirstLetter(category.name)}
