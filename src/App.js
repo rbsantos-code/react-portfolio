@@ -1,10 +1,11 @@
 import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
     <div class="d-flex h-100 text-center text-white bg-dark">
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="mb-auto">
+      <Header>
             <div>
                 <h3 class="float-md-start mb-0" id="full-name">Richard Brian Santos</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
@@ -14,7 +15,7 @@ function App() {
                     <a class="nav-link" href="#contact">Contact</a>
                 </nav>
             </div>
-        </header>
+        </Header>
       </div>
     </div>
   );
