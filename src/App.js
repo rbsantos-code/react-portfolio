@@ -8,11 +8,13 @@ import About from './components/About';
 
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
 
   const [aboutSelected, setAboutSelected] = useState(false);
 
   const [categories] = useState([
+    {
+      name: 'contact'
+    },
     {
       name: 'projects'
     },
@@ -36,10 +38,6 @@ function App() {
             // about
             aboutSelected={aboutSelected}
             setAboutSelected={setAboutSelected}
-
-            // contact
-            contactSelected={contactSelected}
-            setContactSelected={setContactSelected}
           ></Nav>
         </Header>
         <hr></hr>
