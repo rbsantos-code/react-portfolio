@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Nav from './components/Navigation';
 import Hero from './components/Hero';
+import Footer from './components/Footer';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -33,6 +34,8 @@ function App() {
         <main>
           <Hero></Hero>
         </main>
+        <hr></hr>
+        <Footer />
       </div>
     </div>
   );
