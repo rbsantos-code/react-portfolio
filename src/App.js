@@ -4,10 +4,13 @@ import Header from './components/Header';
 import Nav from './components/Navigation';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
+import About from './components/About';
 
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
+
+  const [aboutSelected, setAboutSelected] = useState(false);
 
   const [categories] = useState([
     {
@@ -21,14 +24,19 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
-    <div class="d-flex h-100 text-center text-white bg-dark">
-      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div className="d-flex h-100 text-center text-white bg-dark">
+      <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <Header>
           <Nav
             // category 
             categories={categories}
             setCurrentCategory={setCurrentCategory}
             currentCategory={currentCategory}
+
+            // about
+            aboutSelected={aboutSelected}
+            setAboutSelected={setAboutSelected}
+
             // contact
             contactSelected={contactSelected}
             setContactSelected={setContactSelected}
@@ -36,7 +44,13 @@ function App() {
         </Header>
         <hr></hr>
         <main>
-          <Hero></Hero>
+          {!aboutSelected ? (
+            <>
+              <Hero></Hero>
+            </>
+          ) : (
+            <About></About>
+          )}
         </main>
         <hr></hr>
         <Footer />
