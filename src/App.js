@@ -26,15 +26,18 @@ function App() {
   return (
     <div class="d-flex h-100 text-center text-white bg-dark">
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <Header>
-        <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-        ></Nav>
-      </Header>
+        <Header>
+          <Nav
+            categories={categories}
+            setCurrentCategory={setCurrentCategory}
+            currentCategory={currentCategory}
+            contactSelected={contactSelected}
+            setContactSelected={setContactSelected}
+          ></Nav>
+        </Header>
+        <main>
+          
+        </main>
       </div>
     </div>
   );
