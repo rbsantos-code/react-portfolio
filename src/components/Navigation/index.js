@@ -3,9 +3,11 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
     const {
+        // categories
         categories = [],
         setCurrentCategory,
         currentCategory,
+        //about
         aboutSelected,
         setAboutSelected
     } = props;
@@ -24,7 +26,10 @@ function Nav(props) {
                 </a>
                 {categories.map((category) => (
                     <a className={`nav-link ${currentCategory.name === category.name && !aboutSelected && 'navActive'}`} key={category.name} href={category.name}>
-                        <span onClick={() => {setCurrentCategory(category);
+                        <span onClick={(e) => {
+                            e.preventDefault()
+                            setCurrentCategory(category.name);
+                        console.log(category);
                         setAboutSelected(false)}}>
                             {capitalizeFirstLetter(category.name)}
                         </span>

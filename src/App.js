@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Nav from './components/Navigation';
-import Hero from './components/Hero';
 import Footer from './components/Footer';
 import About from './components/About';
+import Page from './components/Page';
 
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
         <main>
           {!aboutSelected ? (
             <>
-              <Hero></Hero>
+              <Page currentCategory={currentCategory}></Page>
             </>
           ) : (
             <About></About>
