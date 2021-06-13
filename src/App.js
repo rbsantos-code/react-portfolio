@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Nav from './components/Navigation';
+import Hero from './components/Hero';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -36,7 +37,7 @@ function App() {
           ></Nav>
         </Header>
         <main>
-          
+          <Hero></Hero>
         </main>
       </div>
     </div>
