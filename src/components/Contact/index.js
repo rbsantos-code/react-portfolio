@@ -37,22 +37,36 @@ function ContactForm() {
     }
 
     return (
-        <form>
+        <form id="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"></input>
-                    <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                <label htmlFor="name">Name</label>
+                <input 
+                type="text" 
+                name="name" 
+                defaultValue={name} 
+                onBlur={handleChange} 
+                className="form-control" 
+                id="exampleInputEmail1" 
+                aria-describedby="emailHelp" 
+                placeholder="Enter email">
+                </input>
             </div>
+            <br />
             <div className="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"></input>
+                <label htmlFor="email">Email</label>
+                <input type="email" name="email" defaultValue={email} onBlur={handleChange} className="form-control" id="exampleInputPassword1" placeholder="Password"></input>
             </div>
             <br />
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label htmlFor="message">Message</label>
+                <textarea name="message" defaultValue={message} onBlur={handleChange} className="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
             </div>
             <br />
+            {errorMessage && (
+                  <div>
+                      <p className="error-text">{errorMessage}</p>
+                  </div>
+            )}
             <button type="submit" className="btn btn-primary">Submit</button>
         </form>
     );
