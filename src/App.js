@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Nav from './components/Navigation';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -31,6 +32,7 @@ function App() {
             setContactSelected={setContactSelected}
           ></Nav>
         </Header>
+        <hr></hr>
         <main>
           <Hero></Hero>
         </main>
