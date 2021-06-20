@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import { Link } from 'react-router-dom';
 
 
 function Nav(props) {
@@ -20,7 +21,10 @@ function Nav(props) {
 
     return (
         <div>
-            <h3 className="float-md-start mb-0" id="full-name" onClick={() => setAboutSelected(false)}>Richard Brian Santos</h3>
+            <Link to="/">
+                <h3 className="float-md-start mb-0" id="full-name" >Richard Brian Santos</h3>
+            </Link>
+            
             <nav className="nav nav-masthead justify-content-center float-md-end">
                 <a className="nav-link active" aria-current="page" href="#about" onClick={() => setAboutSelected(true)}>
                     About Me
