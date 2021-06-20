@@ -38,6 +38,7 @@ function ContactForm() {
 
     return (
         <form id="contact-form" onSubmit={handleSubmit}>
+            <h2>Connect with me!</h2>
             <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input 

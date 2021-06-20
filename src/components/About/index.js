@@ -5,7 +5,7 @@ function About() {
 
     return (
         <>
-            <section className="columns" id="about">
+            <section className="columns text-center" id="about">
                 <div className="row justify-content-center">
                     <div className="column col-6">
                         <img src="./assets/img/graduation.JPG" className="img-fluid rounded" alt="graduation"></img>
@@ -20,7 +20,7 @@ function About() {
                     </div>
                 </div>
             </section>
-            <section className="columns" id="passions">
+            <section className="columns text-center" id="passions">
                 <div className="row justify-content-center">
                     <div className="column col-6">
                         <h4 id="love">What I love</h4>

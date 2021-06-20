@@ -26,7 +26,7 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
-    <div className="d-flex h-100 text-center text-white bg-dark">
+    <div className="d-flex h-100  text-white bg-dark">
       <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <Header>
           <Nav
@@ -44,7 +44,10 @@ function App() {
         <main>
           {!aboutSelected ? (
             <>
-              <Page currentCategory={currentCategory}></Page>
+              <div className="container">
+                
+                <Page currentCategory={currentCategory}></Page>
+              </div>
             </>
           ) : (
             <About></About>

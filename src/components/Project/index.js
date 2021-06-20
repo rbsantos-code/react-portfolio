@@ -4,7 +4,7 @@ function Project() {
 
     return (
         <>
-            <h2 class="justify-content-center" id="projects">Projects</h2>
+            <h2 className="justify-content-center text-center" id="projects">Projects</h2>
             <section class="col-12">
                 <a href="https://salty-thicket-97397.herokuapp.com/">
                     <img src="./assets/img/brewmaps.png" class="img-fluid rounded" alt="brewmaps"></img>
