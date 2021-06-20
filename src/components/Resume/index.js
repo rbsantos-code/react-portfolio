@@ -3,10 +3,10 @@ import React from 'react';
 function Resume() {
     return (
         <>
-            <h2 className="text-center">Resume</h2>
+            <h2 className="text-center" id="resume">Resume</h2>
             <br />
             <div>
-                <h3>Front-end Proficiencies</h3>
+                <h3 className="resume-font">Front-end Proficiencies</h3>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -18,7 +18,7 @@ function Resume() {
                 </ul>
             </div>
             <div>
-                <h3>Back-end Proficiencies</h3>
+                <h3 className="resume-font">Back-end Proficiencies</h3>
                 <ul>
                     <li>APIs</li>
                     <li>Node</li>

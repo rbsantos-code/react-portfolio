@@ -83,7 +83,12 @@ body {
   text-decoration:solid;
 }
 
-#contact, #projects, #exampleModalLabel {
+#contact, #projects, #resume, #exampleModalLabel {
   color:honeydew;
   text-decoration: underline
+}
+
+.resume-font {
+  color:goldenrod;
+  text-decoration:solid;
 }
