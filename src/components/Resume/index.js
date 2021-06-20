@@ -1,4 +1,5 @@
 import React from 'react';
+import resumeImg from '../../assets/img/resume.pdf'
 
 function Resume() {
     return (
@@ -28,6 +29,11 @@ function Resume() {
                     <li>REST</li>
                     <li>GraphQL</li>
                 </ul>
+            </div>
+            <div className="text-center">
+                <a href={resumeImg}>
+                    <h5>Click here to view my full resume!</h5>
+                </a>
             </div>
         </>
     )
